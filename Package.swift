@@ -45,15 +45,13 @@ let package = Package(
             name: "Package_C",
             dependencies: [
                 .product(name: "Package-A", package: "Package_A")
-            ],
-            path: "src"
+            ]
         ),
         .testTarget(
             name: "Package_CTests",
             dependencies: [
                 "Package_C"
-            ],
-            path: "test"
+            ]
         )
     ]
 )
