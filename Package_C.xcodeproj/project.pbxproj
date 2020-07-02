@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4090FBC24AD655A00DC330A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA0A8124A81AE8008122E3 /* main.swift */; };
-		D4090FC424AD659C00DC330A /* Package_CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4090FC324AD659C00DC330A /* Package_CTests.swift */; };
 		D4090FC624AD659C00DC330A /* Package_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4090FB424AD654400DC330A /* Package_C.framework */; };
 		D4090FCF24AD662D00DC330A /* Package-A in Frameworks */ = {isa = PBXBuildFile; productRef = D4090FCE24AD662D00DC330A /* Package-A */; };
+		D438FC9124AE334C00DF88A5 /* Package_CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438FC8F24AE334C00DF88A5 /* Package_CTests.swift */; };
+		D438FC9624AE33E500DF88A5 /* Package_C.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438FC9524AE33E500DF88A5 /* Package_C.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,10 +26,10 @@
 /* Begin PBXFileReference section */
 		D4090FB424AD654400DC330A /* Package_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Package_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4090FC124AD659C00DC330A /* Package_CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Package_CTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4090FC324AD659C00DC330A /* Package_CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package_CTests.swift; sourceTree = "<group>"; };
-		D4090FC524AD659C00DC330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4090FD024AD67CB00DC330A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		D4AA0A8124A81AE8008122E3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = src/main.swift; sourceTree = SOURCE_ROOT; };
+		D438FC8F24AE334C00DF88A5 /* Package_CTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package_CTests.swift; sourceTree = "<group>"; };
+		D438FC9024AE334C00DF88A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D438FC9524AE33E500DF88A5 /* Package_C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package_C.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,29 +52,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D4090FC224AD659C00DC330A /* test */ = {
+		D438FC8D24AE334C00DF88A5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D4090FC324AD659C00DC330A /* Package_CTests.swift */,
-				D4090FC524AD659C00DC330A /* Info.plist */,
+				D438FC8E24AE334C00DF88A5 /* Package_CTests */,
+				D438FC9024AE334C00DF88A5 /* Info.plist */,
 			);
-			path = test;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		D4090FCC24AD65CD00DC330A /* src */ = {
+		D438FC8E24AE334C00DF88A5 /* Package_CTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4AA0A8124A81AE8008122E3 /* main.swift */,
+				D438FC8F24AE334C00DF88A5 /* Package_CTests.swift */,
 			);
-			name = src;
+			path = Package_CTests;
+			sourceTree = "<group>";
+		};
+		D438FC9324AE33E500DF88A5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D438FC9424AE33E500DF88A5 /* Package_C */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D438FC9424AE33E500DF88A5 /* Package_C */ = {
+			isa = PBXGroup;
+			children = (
+				D438FC9524AE33E500DF88A5 /* Package_C.swift */,
+			);
+			path = Package_C;
 			sourceTree = "<group>";
 		};
 		D4AC1F0724A8151800C340F9 = {
 			isa = PBXGroup;
 			children = (
 				D4090FD024AD67CB00DC330A /* Package.swift */,
-				D4090FCC24AD65CD00DC330A /* src */,
-				D4090FC224AD659C00DC330A /* test */,
+				D438FC9324AE33E500DF88A5 /* Sources */,
+				D438FC8D24AE334C00DF88A5 /* Tests */,
 				D4AC1F1124A8151800C340F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +171,7 @@
 					};
 					D4090FC024AD659C00DC330A = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -202,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4090FBC24AD655A00DC330A /* main.swift in Sources */,
+				D438FC9624AE33E500DF88A5 /* Package_C.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4090FC424AD659C00DC330A /* Package_CTests.swift in Sources */,
+				D438FC9124AE334C00DF88A5 /* Package_CTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +301,12 @@
 		D4090FCA24AD659C00DC330A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P53V4JS928;
-				INFOPLIST_FILE = test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -295,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.littlegreenviper.Package-CTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -302,10 +322,12 @@
 		D4090FCB24AD659C00DC330A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P53V4JS928;
-				INFOPLIST_FILE = test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
