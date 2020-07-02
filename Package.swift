@@ -38,7 +38,7 @@ let package = Package(
             targets: ["Package_C"])
     ],
     dependencies: [
-        .package(name: "Package_A", url: "git@github.com:LittleGreenViper/SPMArticle-Package_A.git", from: "1.0.0")
+        .package(name: "Package_A", url: "git@github.com:LittleGreenViper/SPMArticle-Package_A.git", from: "2.0.0")
     ],
     targets: [
         .target(
