@@ -29,7 +29,7 @@ public struct Package_C: PackageProtocol {
     public init(indent inIndent: Int = 0) {
         indent = inIndent
         let prefix = String(repeating: "\t", count: inIndent)
-        text =  "\(prefix)Package_C, Version: 2.0.0\n" + Package_A(indent: inIndent + 1).text
+        text =  "\(prefix)Package_C, Version: 3.0.0\n" + Package_A(indent: inIndent + 1).text
     }
 }
 

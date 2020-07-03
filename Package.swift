@@ -34,7 +34,6 @@ let package = Package(
     products: [
         .library(
             name: "Package-C",
-            type: .dynamic,
             targets: ["Package_C"])
     ],
     dependencies: [
